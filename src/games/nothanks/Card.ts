@@ -43,6 +43,6 @@ export default class Card {
      * Returns the url of the card image.
      */
     public getImageURL(): string {
-        return `https://raw.githubusercontent.com/3gatsunolion/heart2heart/main/assets/nothanks/${this.val}.png`
+        return `https://raw.githubusercontent.com/3gatsunolion/heart2heart/master/assets/nothanks/${this.val}.png`
     }
 }

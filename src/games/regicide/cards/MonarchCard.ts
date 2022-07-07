@@ -149,6 +149,6 @@ export default class MonarchCard extends Card {
      */
     public getImageURL(): string {
         const filename = this.toString(false).split(' ').join('-')
-        return `https://raw.githubusercontent.com/3gatsunolion/heart2heart/main/assets/regicide/${filename}.png`
+        return `https://raw.githubusercontent.com/3gatsunolion/heart2heart/master/assets/regicide/${filename}.png`
     }
 }
