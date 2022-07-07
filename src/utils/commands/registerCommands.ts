@@ -41,12 +41,16 @@ export function registerCommands(bot: Client) {
     for (const game of gameDirs) {
         try {
             const dirPath = path.join(gamesPath, game)
-            const filePath = path.join(dirPath, 'Game.ts')
+            const files = fs.readdirSync(dirPath)
+            const gameFile = files.filter(f => f.split('.')[0] === 'Game')
+            const gameManagerFile = files.filter(f => f.split('.')[0] === 'GameManager')
+            if (gameFile.length === 0 || gameManagerFile.length === 0) continue
+            const filePath = path.join(dirPath, gameFile[0])
 
             const { data } = require(filePath)
             const execute = async (client: Client, message: Message, args: string[]) => { executeGameCommand(client, message, args, data.name) }
 
-            const managerPath = path.join(dirPath, 'GameManager.ts')
+            const managerPath = path.join(dirPath, gameManagerFile[0])
             const { default: Manager } = require(managerPath)
             if (!bot.gameManagers.has(data.name)) {
                 bot.gameManagers.set(data.name, new Manager())

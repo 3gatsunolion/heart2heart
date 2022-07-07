@@ -4,7 +4,7 @@ import path from 'path';
 
 export async function registerEvents(bot: Client) {
     const eventsPath = path.join(__dirname, '..', '..', 'events')
-    const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.ts'))
+    const eventFiles = fs.readdirSync(eventsPath)
     for (const eventFile of eventFiles) {
         try {
             const event = eventFile.split('.')[0]
