@@ -69,7 +69,7 @@ export function registerCommands(bot: Client) {
     const commandsPath = path.join(__dirname, '..', '..', 'commands')
     fs.readdirSync(commandsPath).forEach((dir) => {
         const dirPath = path.join(commandsPath, dir)
-        const commandFiles = fs.readdirSync(dirPath).filter(file => file.endsWith('.ts'))
+        const commandFiles = fs.readdirSync(dirPath)
         for (const file of commandFiles) {
             try {
                 const filePath = path.join(dirPath, file)
