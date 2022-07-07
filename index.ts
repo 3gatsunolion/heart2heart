@@ -1,11 +1,11 @@
-declare module 'discord.js' {
-    export interface Client {
-      commands: Collection<string, Command>
-      aliases: Collection<string, string>
-      prefix: Collection<Snowflake, string>
-      gameManagers: Collection<Snowflake, GameManager>
-    }
-}
+// declare module 'discord.js' {
+//     export interface Client {
+//       commands: Collection<string, Command>
+//       aliases: Collection<string, string>
+//       prefix: Collection<Snowflake, string>
+//       gameManagers: Collection<Snowflake, GameManager>
+//     }
+// }
 import dotenv from 'dotenv';
 dotenv.config();
 
