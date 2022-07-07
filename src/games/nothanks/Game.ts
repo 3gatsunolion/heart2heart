@@ -532,8 +532,8 @@ export default class NoThanksGame extends Game {
             await prevPlayer.updateCardAndChipMenu(interaction, message)
             const currPlayer = this.currPlayer as NoThanksPlayer
             await currPlayer.updateCardAndChipMenu(null, '')
-        } catch {
-            this.end(false)
+        } catch (error) {
+            console.error(error)
         }
     }
 

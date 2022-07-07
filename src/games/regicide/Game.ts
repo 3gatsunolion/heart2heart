@@ -520,8 +520,8 @@ export default class RegicideGame extends Game {
             } else {
                 await currPlayer.updateCardMenu(interaction, '')
             }
-        } catch {
-            this.end(false)
+        } catch (error) {
+            console.error(error)
         }
     }
 
@@ -613,8 +613,8 @@ export default class RegicideGame extends Game {
                         .catch(error => console.error('Failed to clear reactions:', error))
                 })
             }
-        } catch {
-            this.end(false)
+        } catch (error) {
+            console.error(error)
         }
     }
 
