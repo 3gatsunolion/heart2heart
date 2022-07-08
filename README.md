@@ -21,25 +21,25 @@ More games to come!
 ### Commands
 - Use command `?nothanks` to create a new game of **No Thanks!**.
 
-<!-- ![Create new game of No Thanks!](https://github.com/3gatsunolion/heart2heart/blob/master/assets/nothanks/demo/no-thanks-create-game.gif) -->
+<!-- ![Create new game of No Thanks!](https://github.com/3gatsunolion/heart2heart/blob/main/assets/nothanks/demo/no-thanks-create-game.gif) -->
 - Use command `?nothanks end` to end the game.
 
-<!-- ![End game of No Thanks!](https://github.com/3gatsunolion/heart2heart/blob/master/assets/nothanks/demo/no-thanks-end-game.gif) -->
+<!-- ![End game of No Thanks!](https://github.com/3gatsunolion/heart2heart/blob/main/assets/nothanks/demo/no-thanks-end-game.gif) -->
 
 ### Gameplay
 The rules are simple. Each turn, players have two options:
 - play one of their chips to avoid picking up the current face-up card
 - pick up the face-up card (along with any chips that have already been played on that card) and turn over the next card
 
-![No Thanks! Turn Options](https://github.com/3gatsunolion/heart2heart/blob/master/assets/nothanks/demo/no-thanks-turn-options.gif)
+![No Thanks! Turn Options](https://github.com/3gatsunolion/heart2heart/blob/main/assets/nothanks/demo/no-thanks-turn-options.gif)
 
 The choices aren't so easy as players compete to have the **lowest score** at the end of the game. The deck of cards is numbered from 3 to 35, with each card counting for a number of points equal to its face value. Runs of two or more cards only count as the lowest value in the run - but nine cards are removed from the deck before starting, so be careful looking for connectors. Each chip is worth -1 point, but they can be even more valuable by allowing you to avoid drawing that unwanted card.
 
-![No Thanks! Turn Options](https://github.com/3gatsunolion/heart2heart/blob/master/assets/nothanks/demo/no-thanks-consecutive-runs.gif)
+![No Thanks! Turn Options](https://github.com/3gatsunolion/heart2heart/blob/main/assets/nothanks/demo/no-thanks-consecutive-runs.gif)
 
 Once all 24 cards have found its owner, the player with the lowest final score wins!
 
-![No Thanks! Turn Options](https://github.com/3gatsunolion/heart2heart/blob/master/assets/nothanks/demo/no-thanks-gameover.gif)
+![No Thanks! Turn Options](https://github.com/3gatsunolion/heart2heart/blob/main/assets/nothanks/demo/no-thanks-gameover.gif)
 
 <h2 id="regicide">Regicide</h2>
 
@@ -48,20 +48,20 @@ Once all 24 cards have found its owner, the player with the lowest final score w
 ### Commands
 - Use command `?regicide` to create a new game of **Regicide**.
 
-![Create a new game of Regicide](https://github.com/3gatsunolion/heart2heart/blob/master/assets/regicide/demo/regicide-create-game.gif)
+![Create a new game of Regicide](https://github.com/3gatsunolion/heart2heart/blob/main/assets/regicide/demo/regicide-create-game.gif)
 - Use command `?regicide end` to end the game.
 
 ### Gameplay
 Players take turns to play cards to attack the enemy. Playing a card (or cards) to damage the enemy also grants a power associated with the suit of that card. Once enough damage is dealt, the enemy is defeated.
 
-![Regicide Attack](https://github.com/3gatsunolion/heart2heart/blob/master/assets/regicide/demo/regicide-attack.gif)
+![Regicide Attack](https://github.com/3gatsunolion/heart2heart/blob/main/assets/regicide/demo/regicide-attack.gif)
 
 But beware! Each turn the enemy strikes back. Players will discard cards to satisfy the damage and if they can't discard enough, everyone loses.
 
-![Regicide Suffer Damage](https://github.com/3gatsunolion/heart2heart/blob/master/assets/regicide/demo/regicide-suffer-damage.gif)
+![Regicide Suffer Damage](https://github.com/3gatsunolion/heart2heart/blob/main/assets/regicide/demo/regicide-suffer-damage.gif)
 
 The players win when the last King is defeated.
 
-![Regicide Victory](https://github.com/3gatsunolion/heart2heart/blob/master/assets/regicide/demo/regicide-victory.gif)
+![Regicide Victory](https://github.com/3gatsunolion/heart2heart/blob/main/assets/regicide/demo/regicide-victory.gif)
 
 Rich with tactical decisions and a deep heuristic tree, **Regicide** is a huge challenge for anyone who is brave enough to take it on! A comprehensive rule guide to the game can be found <a href="https://www.badgersfrommars.com/assets/RegicideRulesA4.pdf">here</a>.
