@@ -2,7 +2,7 @@
 Introducing **Heart2Heart**, a Discord bot designed for you to play games alone or with your friends!
 
 ## Invite
-Click here to invite Heart2Heart to your Discord server.
+Click <a href="https://discord.com/api/oauth2/authorize?client_id=984759850577842188&permissions=272448&scope=bot">here</a> to invite Heart2Heart to your Discord server.
 
 Run `?help` to see a list of all commands.
 
