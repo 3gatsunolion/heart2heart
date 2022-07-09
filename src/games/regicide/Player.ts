@@ -405,6 +405,23 @@ export default class RegicidePlayer extends Player {
     }
 
     /**
+     * Returns the number of card select options in player's card select menu.
+     */
+    private getNumSelectCardOptions(): number {
+        let numOptions = 0
+        let jesterFound = false
+        for (const card of this.cards) {
+            if (card.type !== JESTER || !jesterFound) {
+                numOptions++
+                if (card.type === JESTER) {
+                    jesterFound = true
+                }
+            }
+        }
+        return numOptions
+    }
+
+    /**
      * Returns the player's card menu.
      */
     public getCardMenu(): InteractionReplyOptions {
@@ -442,7 +459,7 @@ export default class RegicidePlayer extends Player {
             )
         }
 
-        let maxSelect = Math.max(1, this.numCards)
+        let maxSelect = Math.max(1, this.getNumSelectCardOptions())
         if (!this.isItPlayersTurn() || this.game.turnPhase !== SUFFER_DAMAGE_PHASE) {
             maxSelect = Math.min(maxSelect, 4)
         }
