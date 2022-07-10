@@ -17,6 +17,7 @@ import {
     JESTER,
     ATTACK_PHASE,
     SUFFER_DAMAGE_PHASE,
+    ANIMAL_COMPANION,
 } from './constants';
 import Player from '../utils/Player';
 import RegicideGame from './Game';
@@ -491,6 +492,8 @@ export default class RegicidePlayer extends Player {
                 select.description = '×1'
             } else if (card.type === MONARCH) {
                 select.description = `Value: ${card.attackVal}`
+            } else if (card.type === ANIMAL_COMPANION) {
+                select.description = 'I can accompany any card you choose 🥰'
             }
             selections.push(select)
         }

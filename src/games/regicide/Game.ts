@@ -386,7 +386,7 @@ export default class RegicideGame extends Game {
             .addComponents(
                 new MessageButton()
                     .setCustomId('regicide_view_cards')
-                    .setLabel('View Cards')
+                    .setLabel('View Your Hand')
                     .setStyle('PRIMARY'),
                 new MessageButton()
                     .setCustomId('regicide_leave_during_game')
