@@ -19,6 +19,6 @@ ENV NODE_ENV=production
 
 ## We just need the build to execute the command
 COPY --from=builder /app/build ./build
-EXPOSE 8080
+# EXPOSE 8080
 USER 101
 CMD ["node", "build/index.js"]
