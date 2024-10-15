@@ -517,7 +517,7 @@ export default class NoThanksGame extends Game {
             if (turnType === PLACE_CHIP) {
                 this.currCard.addChip()
                 const plural = this.currCard.numChips > 1 || this.currCard.numChips === 0
-                turnDescription = `>>> ${prevPlayer.user.username} said *"${this.name} 👋"*.\nThere ${plural ? 'are' : 'is'} now **${this.currCard.numChips} chip${plural ? 's' : ''} on the card.**\n\nThe current card number is **${this.currCard.val}**.\n${this.howManyCardsLeft()}`
+                turnDescription = `>>> **${prevPlayer.user.username}** said *"${this.name} 👋"*.\nThere ${plural ? 'are' : 'is'} now **${this.currCard.numChips} chip${plural ? 's' : ''} on the card.**\n\nThe current card number is **${this.currCard.val}**.\n${this.howManyCardsLeft()}`
             } else {
                 // Check if game is over
                 if (this.checkIfGameIsOver()) {
